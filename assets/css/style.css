@@ -1,0 +1,165 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+/* Color Variables */
+:root {
+    --light-blue: 234, 25%, 52%;
+    --dark-blue: 233, 54%, 16%;
+    --gray: 232, 10%, 56%;
+    --hot-pink: 341, 92%, 62%;
+    --light-pink: 341, 100%, 83%;
+    --white: 0, 0%, 100%;
+    --orange-to-pink: #FF6F48, #F02AA6;
+    --blue-to-pink: #4851FF, #F02AA6;
+}
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clear {
+   clear: both;
+}
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+/******************************************
+/* GENERAL STYLES
+/*******************************************/
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: hsl(var(--gray));
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F0F1FF 100%);
+}
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    color: hsl(var(--dark-blue));
+}
+h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+a:link {
+    color: hsl(var(--hot-pink));
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.cta-primary {
+    background-color: hsl(var(--dark-blue));
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    border-radius: 2.8rem;
+    color: hsl(var(--white)) !important;
+}
+.cta--lg {
+    padding: 1rem 3.5rem;
+}
+.cta--gradient-orange {
+    background: linear-gradient(to bottom, var(--orange-to-pink));
+}
+.cta--gradient-purple {
+    background: linear-gradient(to bottom, var(--blue-to-pink));
+}
+
+/******************************************
+/* HERO
+/*******************************************/
+.hero {
+    padding-bottom: 5rem;
+}
+.hero__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.hero__heading {
+    margin-bottom: 0;
+}
+
+/******************************************
+/* COURSES
+/*******************************************/
+.courses {
+    padding-bottom: 5rem;
+}
+.courses__container {
+    display: grid;
+    gap: 5rem;
+}
+.courses__gradient {
+    background: linear-gradient(to bottom, var(--orange-to-pink));
+    padding: 2rem 1.5rem;
+    border-radius: 1.8rem;
+}
+.courses__gradient-heading {
+    color: hsl(var(--white));
+}
+
+.courses__ind-course {
+    background-color: hsl(var(--white));
+    padding: 3.5rem 2rem;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 1rem;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+.footer {
+    background: hsl(var(--dark-blue));
+    padding: 3.5rem 0;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .courses__container {
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .courses__container {
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
