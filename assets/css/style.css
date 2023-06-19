@@ -75,7 +75,7 @@ a:link {
     padding: 0.8rem 1.8rem;
     text-decoration: none;
     border-radius: 2.8rem;
-    color: hsl(var(--white));
+    color: hsl(var(--white)) !important;
 }
 .cta--dark {
     background-color: hsl(var(--dark-blue));
