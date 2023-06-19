@@ -77,6 +77,9 @@ a:link {
     border-radius: 2.8rem;
     color: hsl(var(--white)) !important;
 }
+.cta--link {
+    color: hsl(var(--hot-pink));
+}
 .cta--dark {
     background-color: hsl(var(--dark-blue));
 }
