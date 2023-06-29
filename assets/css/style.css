@@ -11,6 +11,12 @@
     --white: 0, 0%, 100%;
     --orange-to-pink: #FF6F48, #F02AA6;
     --blue-to-pink: #4851FF, #F02AA6;
+
+    --ff-jakarta: 'Plus Jakarta Sans', sans-serif;
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-800: 800;
 }
 /* Box Model Hack */
 * {
@@ -32,7 +38,7 @@ html {
    clear: both;
 }
 .wrapper {
-    max-width: 1400px;
+    max-width: 1360px;
     margin: 0 auto;
     padding: 0 2.5rem;
 }
@@ -40,17 +46,17 @@ html {
 /* GENERAL STYLES
 /*******************************************/
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: var(--ff-jakarta);
     color: hsl(var(--gray));
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: var(--fw-500);
     line-height: 2.8rem;
     background: linear-gradient(to bottom, #FFFFFF 0%, #F0F1FF 100%);
 }
 h1,
 h2,
 h3 {
-    font-weight: 800;
+    font-weight: var(--fw-800);
     color: hsl(var(--dark-blue));
 }
 h1 {
@@ -67,7 +73,7 @@ h3 {
 }
 a:link {
     color: hsl(var(--hot-pink));
-    font-weight: 700;
+    font-weight: var(--fw-700);
     text-decoration: none;
     font-size: 1.8rem;
 }
@@ -107,7 +113,7 @@ a:link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 2.5rem 0;
 }
 .hero .wrapper {
     position: relative;
@@ -117,12 +123,7 @@ a:link {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-}
-.hero__heading {
-    margin-bottom: 0;
-}
-.hero__paragraph {
-    margin-bottom: 3rem;
+    gap: 2rem;
 }
 .hero__decor-img {
     background-image: url(../images/image-hero-mobile@2x.png);
@@ -155,6 +156,7 @@ a:link {
 .courses__ind-course {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     position: relative;
     background-color: hsl(var(--white));
     padding: 3.5rem 2rem;
@@ -195,13 +197,13 @@ a:link {
         margin-bottom: 20rem;
     }
     .courses__container {
-        gap: 2rem;
+        gap: 1rem;
         row-gap: 5rem;
         grid-template-columns: 1fr 1fr;
     }
     .hero__content {
         width: 40rem;
-        margin-top: 4rem;
+        margin-top: 8rem;
     }
     .hero {
         position: relative;
@@ -211,7 +213,7 @@ a:link {
         height: 64rem;
         width: 64rem;
         position: absolute;
-        right: -26rem;
+        right: -29rem;
         top: -6rem;
         z-index: -1;
     }
