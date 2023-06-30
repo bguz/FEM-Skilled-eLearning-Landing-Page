@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://bguz.github.io/FEM-Skilled-eLearning-Landing-Page/)
+- Live Site URL: (https://bguz.github.io/FEM-skilled-elearning-landing-page/)
 
 ## My process
 
