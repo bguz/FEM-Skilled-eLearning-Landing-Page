@@ -38,7 +38,7 @@ html {
    clear: both;
 }
 .wrapper {
-    max-width: 1360px;
+    max-width: 111rem;
     margin: 0 auto;
     padding: 0 2.5rem;
 }
